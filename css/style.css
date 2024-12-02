@@ -1,0 +1,489 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* estilização da barra de navegação */
+
+.navegation{
+ 
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;  
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    width: 1380px;
+    position:fixed;
+    background-color: #fcfafa;
+   
+   
+   
+   
+}
+
+.logo{
+ 
+    margin-right: 600px;
+     
+} 
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: black;
+    text-decoration: none;
+    
+}
+
+.nav-link:hover{
+    border-left: 2px rgb(59, 118, 226) solid;
+    border-right: 2px rgb(59, 118, 226) solid;
+    padding: 5px;
+    transition: .5s;
+    text-shadow: 0 0 1px black;
+    color: rgb(59, 118, 226);
+}
+
+/* estilização da primeira secção da pagina */
+
+ .first-section{ 
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    /* background: linear-gradient(0deg,rgb(255, 255, 255), rgb(59,118,226)); */
+    background-color: rgb(20 103 179);
+    height: 550px;
+    
+}
+
+.frase{
+    background-size: cover;
+    
+    background-image: url(../images/VideoCook_20240924_091204187.png);
+   background-position: center;
+   width: 700px;
+   height: 300px;  
+   /* margin-left: -20080px; */
+   box-shadow: 0 0 15px black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    border-radius: 20px;
+   
+}
+
+/* estilização da segunda secção da pagina */
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: goldenrod 10px solid; */
+}
+
+.div-confira{  
+    
+    
+    text-align: center;
+    height: 400px;
+    width: 650px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    /* border: 1px red solid; */
+    
+}
+
+h3, h4{
+    color: rgb(75, 75, 75);
+    font-size: 1.5rem;
+    text-shadow: 0 0  2px rgb(59, 57, 57);
+}
+
+
+.div-confira > h5{
+    color: rgb(109, 106, 106);
+    font-size: 1rem;
+}
+
+.div-miniquadro{
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    margin: 25px 150px;
+    margin-top: 90px;
+    box-shadow: 0 0 4px black;
+    font-weight: bold;
+    border: 1px green solid;
+    animation: animacao 5s normal infinite;
+    border: none;
+}
+
+
+   /* animação da div-miniquadro */
+
+@keyframes animacao {
+    from {
+   width: 400px;    
+   height: 50px;
+   box-shadow: 1px 1px 555px black;
+   background-color: rgb(59, 118, 226);
+   color: white;
+   
+    }
+    to {
+       box-shadow: 0 0 4px black;
+       
+       width: 350px;
+       height: 50px;
+       font-size: 1rem;
+       background-color: white;
+       
+    }
+    }
+
+          
+    /* estilização da secção das frases */
+
+.frase-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: goldenrod 10px solid;     */
+}
+
+.cards{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* border: 1px red solid;     */
+    width: 900px;
+    height: 400px;
+    background: linear-gradient(180deg, #fcfafa, #fffafa);
+
+}
+   .card-1, .card-2, .card-3, .card-4{
+    width: 300px;
+    height: 300px;
+    /* border: 2px yellow solid; */
+    background-color: rgb(59, 118, 226);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 0 15px black;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 8px black;
+    background-size: cover;
+    
+   }
+    
+   .card-1{
+    background-image: url(../images/370381427_122125525862008949_1532325205199238239_n.jpg);
+   }
+
+   .card-2{
+    background-image: url(../images/IMG-20240906-WA0013.jpg);
+   }
+
+   .card-3{
+    background-image: url(../images/IMG-20240916-WA0004~2.jpg);
+   }
+
+   .card-4{
+    background-image: url(../images/IMG-20240806-WA0025.jpg);
+   }
+
+     .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover{
+        background-color: tomato;
+        cursor: pointer;
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        transition: 1s;
+        box-shadow: 1px 1px 50px black;
+       
+        background-size: cover;
+        opacity: 0.5;
+
+     }
+
+     /* div-miniquadro dos videos e fotos */
+
+     .div-miniquadro-2{
+        border: 1px white solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 50px;
+        margin: 25px 150px;
+        margin-top: 90px;
+        box-shadow: 0 0 4px black;
+        font-weight: bold;
+        border: 1px green solid;
+        animation: animacao-2 5s normal infinite;
+        border: none;
+    }
+    
+    
+       /* animação da div-miniquadro dos videos e fotos */
+    
+    @keyframes animacao-2 {
+        from {
+       width: 400px;    
+       height: 50px;
+       box-shadow: 1px 1px 555px black;
+       background-color: tomato;
+       color: white;
+       
+        }
+        to {
+           box-shadow: 0 0 4px black;
+           
+           width: 350px;
+           height: 50px;
+           font-size: 1rem;
+           background-color: white;
+           
+        }
+        }
+    
+
+     /* estilização da secção dos videos e fotos */
+
+     .video-section{
+        padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: goldenrod 10px solid;     */
+     }
+
+     
+
+
+     
+.cards-video{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* border: 1px red solid;     */
+    width: 900px;
+    height: 400px;
+    background: linear-gradient(180deg, #fcfafa, #fffafa);
+    
+    
+    background-size: cover;
+    
+    
+
+}
+   
+.card-V1{
+    width: 300px;
+    height: 300px;
+    /* border: 2px yellow solid; */
+    background-color: rgb(59, 118, 226);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 0 15px black;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 8px black;
+    background-size: cover;
+    background-image: url(../images/PrConstantinoBumba.jpg);
+   }
+
+   .card-V1:hover{
+    background-color: tomato;
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 1px 1px 50px black;
+    opacity:  0.5; 
+    
+
+   }
+
+   .card-f1{
+    width: 300px;
+    height: 300px;
+    /* border: 2px yellow solid; */
+    background-color: rgb(59, 118, 226);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 0 15px black;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 8px black;
+    background-size: cover;
+    background-image: url(../images/IMG-20240915-WA0003.jpg);
+   }
+
+   .card-f1:hover{
+    background-color: tomato;
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 1px 1px 50px black;
+    opacity: 0.5;
+   }
+
+
+/* div-miniquadro dos videos e fotos */
+
+.div-miniquadro-3{
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    margin: 25px 150px;
+    margin-top: 90px;
+    box-shadow: 0 0 4px black;
+    font-weight: bold;
+    border: 1px green solid;
+    animation: animacao-3 5s normal infinite;
+    border: none;
+}
+
+
+   /* animação da div-miniquadro dos videos e fotos */
+
+@keyframes animacao-3 {
+    from {
+   width: 400px;    
+   height: 50px;
+   box-shadow: 1px 1px 555px black;
+   background-color: mediumseagreen;
+   color: white;
+   
+    }
+    to {
+       box-shadow: 0 0 4px black;
+       
+       width: 350px;
+       height: 50px;
+       font-size: 1rem;
+       background-color: white;
+       
+    }
+    }
+
+
+   /* estilização da secção dos factos */
+
+   .fatos-section{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: goldenrod 10px solid;     */
+   }
+
+   .cards-fatos{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* border: 1px red solid;     */
+    width: 900px;
+    height: 400px;
+    background: linear-gradient(180deg, #fcfafa, #fffafa);
+    
+    
+    background-size: cover;
+   }
+
+   .card-ft1{
+    width: 300px;
+    height: 300px;
+    /* border: 2px yellow solid; */
+    background-color: rgb(59, 118, 226);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 0 15px black;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 8px black;
+    background-size: cover;
+    background-image: url(../images/IMG-20230504-WA0012\ \(2\).jpg);
+   }
+
+   .card-ft1:hover{
+    background-color: tomato;
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 1px 1px 50px black;
+    opacity: 0.5;
+    
+   }
+
+   /* estilização do botão do whatsapp*/
+   .cont-btn{
+    
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    float: right;
+    background-image: url(../images/whatsapp_48px.png);
+    background-size: cover;
+    position: relative;
+    position: fixed;
+    margin-left: 1250px;
+   }
+
+
+   .cont-btn:hover{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    box-shadow: 0 0 17px black;
+    background-color: transparent;
+   }
+
+   /* estilizando o rodapé */
+   footer{
+    color: #fcfafa;
+    height: 85px;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
